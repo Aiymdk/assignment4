@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Healty Food</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--это мета тег для телефонов-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!--это сслыка на бутстарп-->
+	<link rel="icon" type="image/x-icon" href="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/knife_fork.png"> <!--favicon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--это для использования шрифта-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> <!--это для самого шрифта-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!--это для бутстрапа-->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!--это для иконок-->
+	<link href="style.css" rel="stylesheet"> <!--это для соединение css файла с этим-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><!--JQUERY-->
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a href="#"><img class = "logo" src="https://images.pexels.com/photos/5692579/pexels-photo-5692579.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></a>
+		<style>
+			.logo{
+   				width: 70px;
+    			height: 60px;
+    			border-radius: 50%;
+    			cursor: pointer;	
+				}
+		</style>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span><!--font awesome впервые испольвазли здесь-->
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Team</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<style>
+  #main {
+    background-color: #009688;
+	width: 100%;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+    max-width: 95%;
+    width: 500px;
+  }
+  #tab-btn {
+    display: flex;
+  }
+  .login-tab,
+  .register-tab {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: #37474f;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .active {
+    background-color: #eee;
+    color: #000;
+  }
+  .login-box,
+  .register-box {
+    width: 100%;
+    background-color: #eee;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 2px 2px 5px #555;
+  }
+  .register-box {
+    display: none;
+  }
+  .inp {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 2px solid #888;
+    border-bottom: 5px solid #888;
+    background-color: #fff;
+    color: #666;
+  }
+  .inp:focus {
+    outline: none;
+    border: 2px solid #555;
+    border-bottom: 5px solid #555;
+  }
+  .sub-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 5px solid #444;
+  }
+  .sub-btn:focus {
+    outline: none;
+  }
+  .sub-btn:active {
+    border: none;
+    margin-top: 5px;
+  }
+  #forgot {
+    font-size: 20px;
+    color: #444;
+    text-decoration: none;
+    display: block;
+  }
+  h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    font-variant: small-caps;
+    color: #333;
+    font-size: 30px;
+  }
+</style>
+  <script>
+	  $(document).ready(function () {
+  $(".register-tab").click(function () {
+    $(".register-box").show();
+    $(".login-box").hide();
+    $(".register-tab").addClass("active");
+    $(".login-tab").removeClass("active");
+  });
+  $(".login-tab").click(function () {
+    $(".login-box").show();
+    $(".register-box").hide();
+    $(".login-tab").addClass("active");
+    $(".register-tab").removeClass("active");
+  });
+});
+  </script>
+<!-- Register -->
+<div class="ba" style="background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;">
+<div class="containera">
+	<div class="d-flex justify-content-center h-100">
+		<div class="carda">
+			<script>
+          
+				// Function to check Whether both passwords
+				// is same or not.
+				function checkPassword() {
+                var value1 = document.getElementById("password").value;
+                var value2 = document.getElementById("cpassword").value;
+                       
+                if (value1 === value2) {
+                    location.href = "index.html";
+                } else {
+                    alert("Wrong Password");
+                }
+                
+            }
+			</script>
+			<div class="card-body">
+				<!-- Tab Buttons -->
+	<div id="tab-btn">
+		<a href="#" class="login-tab active">Sign In</a>
+		<a href="#" class="register-tab">Sign Up</a>
+	  </div>
+	  <!-- Login Form -->
+	  <div class="login-box">
+		<h1>Sign In to 
+			<span
+			   class="txt-rotate"
+			   data-period="2000"
+			   data-rotate='[ "awesomeness", "site.", "healty life.", "target.", "fun!" ]'></span>
+		  </h1>
+		  <script>
+			  var TxtRotate = function(el, toRotate, period) {
+this.toRotate = toRotate;
+this.el = el;
+this.loopNum = 0;
+this.period = parseInt(period, 10) || 2000;
+this.txt = '';
+this.tick();
+this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+var i = this.loopNum % this.toRotate.length;
+var fullTxt = this.toRotate[i];
+
+if (this.isDeleting) {
+this.txt = fullTxt.substring(0, this.txt.length - 1);
+} else {
+this.txt = fullTxt.substring(0, this.txt.length + 1);
+}
+
+this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+var that = this;
+var delta = 300 - Math.random() * 100;
+
+if (this.isDeleting) { delta /= 2; }
+
+if (!this.isDeleting && this.txt === fullTxt) {
+delta = this.period;
+this.isDeleting = true;
+} else if (this.isDeleting && this.txt === '') {
+this.isDeleting = false;
+this.loopNum++;
+delta = 500;
+}
+
+setTimeout(function() {
+that.tick();
+}, delta);
+};
+
+window.onload = function() {
+var elements = document.getElementsByClassName('txt-rotate');
+for (var i=0; i<elements.length; i++) {
+var toRotate = elements[i].getAttribute('data-rotate');
+var period = elements[i].getAttribute('data-period');
+if (toRotate) {
+new TxtRotate(elements[i], JSON.parse(toRotate), period);
+}
+}
+// INJECT CSS
+var css = document.createElement("style");
+css.type = "text/css";
+css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+document.body.appendChild(css);
+};
+		  </script>
+		<form method="post" id="login-form">
+		  <input type="text" name="username" placeholder="Username" class="inp" required autofocus /><br />
+		  <input type="password" name="password" placeholder="Password" class="inp" required /><br />
+		  <a href="#" id="forgot">Forgot Password?</a><br />
+		  <input type="submit" name="submit" value="SIGN IN" class="sub-btn" />
+		</form>
+	  </div>
+	  <!-- Registration Form -->
+	  <div class="register-box">
+		<h2>Register With Us!</h2>
+		<form action="#" method="post" id="reg-form" onSubmit = "return (function(event) { event.preventDefault();  checkPassword()}) (event)">
+		  <input type="text" name="uname" placeholder="Enter Username" class="inp" required autofocus /><br />
+		  <input type="email" name="email" placeholder="Enter Email" class="inp" required /><br />
+		  <input type = password id = "password" size = 25 class="inp" placeholder="Password" required><br />
+		  <input type = password id = "cpassword" size = 25 class="inp" placeholder="Confirm password" required><br />
+		  <button  class="sub-btn" type = submit id="btnsubmit">Submit</button>
+		</form>
+	  </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer class="bg-light text-center text-white">
+	<div class="container p-4 pb-0">
+	  <section class="mb-4">
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #3b5998;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-facebook-f"></i
+		></a>
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #55acee;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-twitter"></i
+		></a>
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #dd4b39;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-google"></i
+		></a>
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #ac2bac;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-instagram"></i
+		></a>
+	  </section>
+	</div>
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		&copy; 2022 Copyright:
+	  <a class="text-white" href="#">Aruzhan & Ayim</a>
+	</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

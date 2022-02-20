@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Healty Food</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--это мета тег для телефонов-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> <!--это сслыка на бутстарп-->
+	<link rel="icon" type="image/x-icon" href="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/knife_fork.png"> <!--favicon-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <!--это для использования шрифта-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> <!--это для самого шрифта-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!--это для бутстрапа-->
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> <!--это для иконок-->
+	<link href="style.css" rel="stylesheet"> <!--это для соединение css файла с этим-->
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a href="#"><img class = "logo" src="https://images.pexels.com/photos/5692579/pexels-photo-5692579.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"></a>
+		<style>
+			.logo{
+   				width: 70px;
+    			height: 60px;
+    			border-radius: 50%;
+    			cursor: pointer;	
+				}
+		</style>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span><!--font awesome впервые испольвазли здесь-->
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Team</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!--Welcome-->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Why Is Health The Most Important Part Of Your Life?</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">
+				Your health is at the center of your life. Every part of your life relies on you having good health.
+
+				You cannot climb higher in all the other seven areas of your life if you do not have enough physical energy to devote to each of them. When you have low energy, it is difficult to:</p>
+		</div>
+	</div>
+</div>
+<div class="jumbotron">
+<div class="row">
+	<div class="column">
+	  <img src="https://images.pexels.com/photos/793759/pexels-photo-793759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+	  <img src="https://images.pexels.com/photos/1295572/pexels-photo-1295572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+	  <img src="https://images.pexels.com/photos/8963371/pexels-photo-8963371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	</div>
+	<div class="column">
+	  <img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	</div>
+  </div>
+  
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()" style="color: white;">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="https://images.pexels.com/photos/793759/pexels-photo-793759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="https://images.pexels.com/photos/1295572/pexels-photo-1295572.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="https://images.pexels.com/photos/8963371/pexels-photo-8963371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" style="width:100%">
+	  </div>
+	  
+	  <a class="prev" onclick="plusSlides(-1)" style="color: white;">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)" style="color: white;">&#10095;</a>
+  
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+	</div>
+  </div>
+  
+  <script>
+  function openModal() {
+	document.getElementById("myModal").style.display = "block";
+  }
+  
+  function closeModal() {
+	document.getElementById("myModal").style.display = "none";
+  }
+  window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+	showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+	showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("demo");
+	var captionText = document.getElementById("caption");
+	if (n > slides.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+	captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+  </div>
+<hr>
+<!-- Form -->
+  <div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-lg-6">
+			<h2>Get our program about healty foods</h2>
+            <form>
+                <div class="form-row">
+                 <div class="form-group col-md-6">
+                     <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Name</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Country</label>
+            <input type="text" class="form-control" id="inputCity" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">City</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>Afghanistan</option>
+              <option>Albania</option>
+              <option>Albania</option>
+              <option>Algeria</option>
+              <option>Andorra</option>
+              <option>Angola</option>
+              <option>Antigua and Barbuda</option>
+              <option>Argentina</option>
+              <option>Armenia</option>
+              <option>Australia</option>
+              
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+			<input type="button" class="btn" value="Date" id="btna"></button>
+            <p id="some"></p>
+			<script>
+				document.getElementById("btna").addEventListener("click", displayDate);
+				function displayDate() {
+  				document.getElementById("some").innerHTML = Date();
+				}
+			</script>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out
+            </label>
+          </div>
+        </div>
+        <button id="btn" class="btn btn-primary">Try it</button>
+
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+  alert("Сообщение отправлено!");
+});
+</script>
+      </form>
+		</div>
+		<div class="col-lg-6">
+			<img src="img/haha.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer class="bg-light text-center text-white">
+	<div class="container p-4 pb-0">
+	  <section class="mb-4">
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #3b5998;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-facebook-f"></i
+		></a>
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #55acee;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-twitter"></i
+		></a>
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #dd4b39;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-google"></i
+		></a>
+		<a
+		  class="btn btn-primary btn-floating m-1"
+		  style="background-color: #ac2bac;"
+		  href="https://instagram.com/"
+		  role="button"
+		  ><i class="fab fa-instagram"></i
+		></a>
+	  </section>
+	</div>
+	<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		&copy; 2022 Copyright:
+	  <a class="text-white" href="#">Aruzhan & Ayim</a>
+	</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
